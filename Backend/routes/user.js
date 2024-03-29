@@ -3,7 +3,7 @@ const router = express.Router();
 const zod = require("zod");
 const { User, Account } = require("../db");
 const jwt = require('jsonwebtoken')
-const bcrypt = require("bcrypt")
+const bcrypt = require('bcryptjs')
 const { JWT_SECRET } = process.env;
 const authMiddleware = require("../middleware");
 
